@@ -85,6 +85,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -93,6 +94,7 @@ img {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -120,6 +122,8 @@ img {
 .header-menu-list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address {
@@ -129,6 +133,8 @@ img {
 .address-list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-navigation-link {
@@ -163,6 +169,7 @@ img {
 
 /* ------------------------ SECTION-HERO ------------------------ */
 .section-hero {
+  padding: 188px 0;
   background-color: var(--NAVY-BLUE, #2e2f42);
 }
 
@@ -182,7 +189,9 @@ img {
 }
 
 .section-hero-button {
-  display: inline-flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   align-items: flex-start;
   gap: 10px;
   background-color: var(--IRIS, #4d5ae5);
@@ -211,13 +220,17 @@ img {
   padding-bottom: 120px;
 }
 
+.advantages-header {
+  margin-bottom: 8px;
+}
+
 .section-advantages-list {
   display: flex;
   gap: 24px;
 }
 
 .advantages-item {
-  width: calc((100% - 3 * 24) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 /* ------------------------- SECTION-TEAM -------------------------- */
@@ -227,7 +240,11 @@ img {
   padding-bottom: 120px;
 }
 
-.setion-team-list {
+.section-team-header {
+  text-align: center;
+}
+
+.section-team-list {
   display: flex;
   gap: 24px;
 }
@@ -253,6 +270,12 @@ img {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.team-list-paragraph {
+  text-align: center;
 }
 
 .section-header {
@@ -276,6 +299,11 @@ img {
   padding-bottom: 120px;
 }
 
+.portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
 .section-portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -297,11 +325,12 @@ img {
 
 .portfolio-item-content {
   display: flex;
-  padding: 0px 16px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
+  margin-bottom: 8px;
   align-self: stretch;
 }
 
@@ -310,16 +339,15 @@ img {
 }
 
 /* ---------------------- FOOTER ______________________________________ */
-.footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 .footer {
-  background: var(--NAVY-BLUE, #2e2f42);
+  padding: 100px 0;
+  background-color: var(--NAVY-BLUE, #2e2f42);
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   color: var(--IRIS, #4d5ae5);
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -345,8 +373,4 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.footer-paragraph {
-  margin-top: 8px;
 }
