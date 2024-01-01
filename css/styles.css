@@ -47,12 +47,18 @@ img {
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .section-list-header {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
@@ -216,7 +222,17 @@ img {
   padding-bottom: 120px;
 }
 
-.advantages-header {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
   margin-bottom: 72px;
 }
 
